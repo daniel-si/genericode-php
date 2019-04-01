@@ -1,0 +1,15 @@
+<!--
+  ~ Copyright (c) 2019.
+  ~
+  ~ Daniel Sigg (daniel[dot]sigg[at]fes-ehemalige.de).
+  ~
+  ~ All rights reserved. Alle Rechts vorbehalten. Lizensiert zur Nutzung und Weiterentwicklung an FES-Ehemalige e.V., Bonn.
+  ~
+  -->
+
+<phpunit
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+>
+</phpunit>

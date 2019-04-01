@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019.
+  ~
+  ~ Daniel Sigg (daniel[dot]sigg[at]fes-ehemalige.de).
+  ~
+  ~ All rights reserved. Alle Rechts vorbehalten. Lizensiert zur Nutzung und Weiterentwicklung an FES-Ehemalige e.V., Bonn.
+  ~
+  -->
+
+<gc:CodeList xmlns:gc="http://docs.oasis-open.org/codelist/ns/genericode/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Identification>
+        <ShortName>Test</ShortName>
+        <LongName>Long test name</LongName>
+        <Version>2.0</Version>
+        <CanonicalUri>urn:de:daniel-sigg:genericode:test</CanonicalUri>
+        <CanonicalVersionUri>urn:de:daniel-sigg:genericode:test:2</CanonicalVersionUri>
+        <Agency>
+            <LongName>Daniel Sigg</LongName>
+        </Agency>
+    </Identification>
+    <ColumnSet>
+        <Column Id="id" Use="required">
+            <ShortName>id</ShortName>
+            <LongName>Identifier</LongName>
+            <Data Type="string"/>
+        </Column>
+        <Column Id="ISO_3" Use="optional">
+            <ShortName>ISO_3</ShortName>
+            <LongName>ISO 3 characters</LongName>
+            <Data Type="string"/>
+        </Column>
+        <Column Id="ISO_2" Use="optional">
+            <ShortName>ISO_2</ShortName>
+            <LongName>ISO 2 characters</LongName>
+            <Data Type="string"/>
+        </Column>
+        <Key Id="idKey">
+            <ShortName>IdKey</ShortName>
+            <ColumnRef Ref="id"/>
+        </Key>
+    </ColumnSet>
+    <SimpleCodeList>
+        <Row>
+             <Value ColumnRef="id">
+                 <SimpleValue>1</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_3">
+                 <SimpleValue>ALB</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_2">
+                 <SimpleValue>AL</SimpleValue>
+             </Value>
+        </Row>
+        <Row>
+             <Value ColumnRef="id">
+                 <SimpleValue>2</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_3">
+                 <SimpleValue>BIH</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_2">
+                 <SimpleValue>BA</SimpleValue>
+             </Value>
+        </Row>
+        <Row>
+             <Value ColumnRef="id">
+                 <SimpleValue>3</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_2">
+                 <SimpleValue>AD</SimpleValue>
+             </Value>
+        </Row>
+        <Row>
+             <Value ColumnRef="id">
+                 <SimpleValue>4</SimpleValue>
+             </Value>
+             <Value ColumnRef="ISO_3">
+                 <SimpleValue>BEL</SimpleValue>
+             </Value>
+        </Row>
+    </SimpleCodeList>
+</gc:CodeList>

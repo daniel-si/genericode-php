@@ -1,0 +1,23 @@
+{
+    "name": "danielsi/genericode-php",
+    "description": "A PHP library to parse code lists defined as genericode documents.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "DanielSi\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Sigg",
+            "email": "post@daniel-sigg.de"
+        }
+    ],
+    "require": {
+        "ext-dom": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    }
+}

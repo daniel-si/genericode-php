@@ -36,7 +36,7 @@ class Row
             }
 
             $valueElem = $valueData->getElementsByTagName('SimpleValue');
-            if ($valueElem->count() !== 1) {
+            if ($valueElem->length !== 1) {
                 throw new \Exception('Only (one) SimpleValue is supported.');
             }
 

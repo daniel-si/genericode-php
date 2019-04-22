@@ -20,7 +20,7 @@ class Row
         $this->data = [];
     }
 
-    static function loadFromXML(CodeListDocument $document, \DOMElement $rowData)
+    public static function loadFromXML(CodeListDocument $document, \DOMElement $rowData)
     {
         $row = new self($document);
 
